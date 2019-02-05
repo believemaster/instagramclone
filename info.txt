@@ -1,0 +1,9 @@
+HTTP request method for restful API
+GET POST PATCH/PUT DELETE
+
+Rails controller actions
+index show new create edit update destroy
+
+get '/post/:id', to: 'post#show'
+
+resources :post, only: [:index, :show, :new, :create]
